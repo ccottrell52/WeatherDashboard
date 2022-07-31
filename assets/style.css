@@ -1,1 +1,85 @@
+.custom-jumbotron {
+    background-image: linear-gradient(to right, rgb(84, 130, 239), rgb(25, 12, 74));
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+}
 
+h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.custom-btn {
+    background-color: rgb(106, 163, 255);
+    color: white;
+    margin: 10px 0px;
+}
+
+.custom-btn:hover {
+    cursor: pointer;
+}
+
+.searchDivider {
+    border-top: 1px solid black; 
+}
+
+.searchItemBtn {
+    border-style: none;
+    border-radius: 4px;
+    background-color: rgb(178, 175, 175);
+    text-align: center;
+    padding: 4px;
+    margin-top: 10px;
+}
+
+.custom-today {
+   border: 1px solid black;
+   line-height: 1;
+   padding: 8px 0px 0px 8px;
+   margin-top: 5px;
+}
+
+.favorable {
+    background-color: green;
+    color: white;
+    width: 50px;
+    text-align: center;
+    padding: 6px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.moderate {
+    background-color: yellow;
+    color: black;
+    width: 50px;
+    text-align: center;
+    padding: 6px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.severe {
+    background-color: red;
+    color: black;
+    width: 50px;
+    text-align: center;
+    padding: 6px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.custom-card {
+    background-color: rgb(56, 74, 106);
+    color: white;
+    border-radius: 0px;
+    margin: 0px 10px 20px;
+}
+
+.custom-header {
+    font-family: 'Roboto', sans-serif;
+    padding-top: 9px;
+    word-wrap: break-word;
+}
