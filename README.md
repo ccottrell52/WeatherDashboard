@@ -13,4 +13,4 @@ and youll never feel unprepared.
 
 
 
-![alt text](assets\Weather Dashboard.jpg)
+![alt text](assets/Weather%20Dashboard.jpg)
