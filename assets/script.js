@@ -39,3 +39,42 @@ searchBtn.addEventListener('click', function(event) {
     var dividerEl = document.querySelector("#divider");
     dividerEl.className = "searchDivider";
   }
+
+ 
+function getButtons() {
+  
+    if(localStorage.getItem('Cities:') != null) {
+      var old_city = JSON.parse(localStorage.getItem('Cities:'));
+      searchHistoryEl.innerHTML = "";
+  
+      for (var i = 0; i < old_city.length; i++) {
+        var searchItemBtn = document.createElement('button');
+        searchItemBtn.classList.add("searchItemBtn");
+        var searchedCity = JSON.parse(localStorage.getItem('Cities:'))[i];
+        searchItemBtn.innerHTML += searchedCity;
+        searchHistoryEl.append(searchItemBtn); 
+        renderWeather();
+      }
+    } 
+  
+    
+    function renderWeather() {
+      searchItemBtn.addEventListener("click", function(event) { 
+        event.preventDefault();
+        if (searchItemBtn) {
+          document.querySelector("#cardRow").innerHTML = '';
+          document.querySelector('#todayContainer').innerHTML = ''
+          getWeather(event.target.innerHTML);
+        }
+      });
+    }
+  }
+  
+  
+  function keepButtons () {
+    if (localStorage === "") {
+  
+    } else {
+      getButtons();
+    }
+  }
